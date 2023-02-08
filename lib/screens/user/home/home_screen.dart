@@ -6,6 +6,7 @@ import 'package:CampusCar/screens/user/vehicle/vehicle_detail_screen.dart';
 import 'package:CampusCar/service/vehicle_service.dart';
 import 'package:CampusCar/utils/utils.dart';
 import 'package:CampusCar/widgets/loading_screen.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import 'package:CampusCar/constants/colors.dart';
@@ -104,7 +105,13 @@ class _HomeScreenState extends State<HomeScreen> {
     return pickedFile;
   }
 
+  // final FirebaseFirestore firebaseFirestore = FirebaseFirestore.instance;
+  // Map<String, dynamic> data = <String, dynamic>{
+  //   'date': "123",
+  //   '10-11': int.parse("2"),
+  // };
   Future btnPressHandler({String source}) async {
+    // await firebaseFirestore.collection("test").add(data);
     // get license plate number from server
     var response = await getLicensePlate(source: source);
     if (response == null) {

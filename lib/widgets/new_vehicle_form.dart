@@ -3,7 +3,7 @@ import 'package:CampusCar/constants/colors.dart';
 import 'package:CampusCar/constants/constants.dart';
 import 'package:CampusCar/widgets/custom_icon_button.dart';
 import 'package:CampusCar/widgets/custom_input_field.dart';
-import 'package:circular_check_box/circular_check_box.dart';
+// import 'package:circular_check_box/circular_check_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_material_color_picker/flutter_material_color_picker.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -254,14 +254,14 @@ class _NewVehicleFormState extends State<NewVehicleForm> {
           // mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Text("Auto select default profile image", style: labelStyle),
-            CircularCheckBox(
-              materialTapTargetSize: MaterialTapTargetSize.padded,
-              activeColor: primaryBlue,
-              onChanged: (value) {
-                widget.setProfileImageCheckbox(value);
-              },
-              value: widget.profileImageCheckbox,
-            ),
+            // CircularCheckBox(
+            //   materialTapTargetSize: MaterialTapTargetSize.padded,
+            //   activeColor: primaryBlue,
+            //   onChanged: (value) {
+            //     widget.setProfileImageCheckbox(value);
+            //   },
+            //   value: widget.profileImageCheckbox,
+            // ),
           ],
         ),
         widget.profileImageCheckbox != true && widget.pickedImage != null
