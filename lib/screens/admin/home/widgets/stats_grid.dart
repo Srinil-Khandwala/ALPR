@@ -17,11 +17,17 @@ class StatsGrid extends StatelessWidget {
     this.currentScreenHandler,
   });
 
-  final graphRed = Color(0xffff6a69);
-  final graphBlue = Color(0xff7a54ff);
-  final graphOrange = Color(0xffff8f61);
-  final graphGreen = Color(0xff96da47);
-  final graphLightBlue = Color(0xff2ac3ff);
+  // final graphRed = Color(0xffff6a69);
+  // final graphBlue = Color(0xff7a54ff);
+  // final graphOrange = Color(0xffff8f61);
+  // final graphGreen = Color(0xff96da47);
+  // final graphLightBlue = Color(0xff2ac3ff);
+
+  final graph1 = Color(0xff37306B);
+  final graph2 = Color(0xff66347F);
+  final graph3 = Color(0xff9E4784);
+  final graph4 = Color(0xffD27685);
+  
 
   final numberFormatter = NumberFormat.compact(locale: 'en_US');
 
@@ -34,12 +40,12 @@ class StatsGrid extends StatelessWidget {
           Flexible(
             child: Row(
               children: <Widget>[
-                _buildStatCard('Total Vehicles', totalVehiclesCount, graphRed,
+                _buildStatCard('Total Vehicles', totalVehiclesCount, graph1,
                     () {
                   currentScreenHandler(2);
                 }),
                 _buildStatCard(
-                    'Permit Expired', totalExpiredVehiclesCount, graphBlue, () {
+                    'Permit Expired', totalExpiredVehiclesCount, graph2, () {
                   currentScreenHandler(2);
                 }),
               ],
@@ -49,9 +55,9 @@ class StatsGrid extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 _buildStatCard(
-                    'Total Scans', totalScansCount, graphOrange, () {}),
+                    'Total Scans', totalScansCount, graph3, () {}),
                 _buildStatCard(
-                    'Total Vehicle Logs', totalVehicleLogsCount, graphLightBlue,
+                    'Total Vehicle Logs', totalVehicleLogsCount, graph4,
                     () {
                   currentScreenHandler(1);
                 }),
@@ -77,7 +83,7 @@ class StatsGrid extends StatelessWidget {
             boxShadow: [
               BoxShadow(
                 color: color,
-                blurRadius: 12,
+                blurRadius: 0,
                 spreadRadius: 1,
               ),
             ],
