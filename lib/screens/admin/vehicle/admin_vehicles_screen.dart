@@ -287,7 +287,7 @@ class _DataSource extends DataTableSource {
     if (index >= _rows.length) return null;
     final row = _rows[index];
     String formattedDate =
-        DateFormat("dd/MM hh:mm aa").format(DateTime.parse(row.expires));
+        DateFormat("dd/MM/yyyy hh:mm aa").format(DateTime.parse(row.expires));
     return DataRow.byIndex(
       index: index,
       cells: [
