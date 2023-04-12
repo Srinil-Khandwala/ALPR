@@ -1,4 +1,4 @@
-import 'package:CampusCar/enum/direction.dart';
+import 'package:AutoVision/enum/direction.dart';
 import 'package:flash/flash.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';

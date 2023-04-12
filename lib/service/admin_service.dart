@@ -1,5 +1,5 @@
-import 'package:CampusCar/models/log.dart';
-import 'package:CampusCar/models/vehicle.dart';
+import 'package:AutoVision/models/log.dart';
+import 'package:AutoVision/models/vehicle.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class AdminService {

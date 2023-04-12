@@ -1,12 +1,12 @@
-import 'package:CampusCar/constants/constants.dart';
-import 'package:CampusCar/models/vehicle.dart';
-import 'package:CampusCar/screens/user/vehicle/widgets/profile_header.dart';
-import 'package:CampusCar/utils/utils.dart';
-import 'package:CampusCar/widgets/vehicle_info.dart';
-import 'package:CampusCar/screens/user/vehicle/widgets/vehicle_info_error.dart';
-import 'package:CampusCar/service/vehicle_service.dart';
+import 'package:AutoVision/constants/constants.dart';
+import 'package:AutoVision/models/vehicle.dart';
+import 'package:AutoVision/screens/user/vehicle/widgets/profile_header.dart';
+import 'package:AutoVision/utils/utils.dart';
+import 'package:AutoVision/widgets/vehicle_info.dart';
+import 'package:AutoVision/screens/user/vehicle/widgets/vehicle_info_error.dart';
+import 'package:AutoVision/service/vehicle_service.dart';
 import 'package:flutter/material.dart';
-import 'package:CampusCar/locator.dart';
+import 'package:AutoVision/locator.dart';
 
 class VehicleDetail extends StatefulWidget {
   final bool isAllowed;

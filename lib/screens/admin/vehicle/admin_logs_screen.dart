@@ -1,16 +1,16 @@
-import 'package:CampusCar/constants/colors.dart';
-import 'package:CampusCar/models/log.dart';
-import 'package:CampusCar/screens/admin/vehicle/admin_vehicle_detail_screen.dart';
-import 'package:CampusCar/screens/admin/vehicle/widgets/download_dialog_content.dart';
-import 'package:CampusCar/utils/export_util.dart';
-import 'package:CampusCar/widgets/my_drawer.dart';
+import 'package:AutoVision/constants/colors.dart';
+import 'package:AutoVision/models/log.dart';
+import 'package:AutoVision/screens/admin/vehicle/admin_vehicle_detail_screen.dart';
+import 'package:AutoVision/screens/admin/vehicle/widgets/download_dialog_content.dart';
+import 'package:AutoVision/utils/export_util.dart';
+import 'package:AutoVision/widgets/my_drawer.dart';
 import 'package:animated_search_bar/animated_search_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:CampusCar/locator.dart';
-import 'package:CampusCar/models/vehicle.dart';
-import 'package:CampusCar/service/admin_service.dart';
-import 'package:CampusCar/utils/utils.dart';
-import 'package:CampusCar/widgets/loading_screen.dart';
+import 'package:AutoVision/locator.dart';
+import 'package:AutoVision/models/vehicle.dart';
+import 'package:AutoVision/service/admin_service.dart';
+import 'package:AutoVision/utils/utils.dart';
+import 'package:AutoVision/widgets/loading_screen.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl/intl.dart';
@@ -59,7 +59,8 @@ class _AdminLogsScreenState extends State<AdminLogsScreen> {
             ])
         .toList();
 
-    String currDate = DateTime.now().toString();
+    // String currDate = DateTime.now().toString();
+    String currDate = DateFormat('yyyyMMddTHHmmss').format(DateTime.now());
     String filename = "Logs_$currDate";
     ExportUtil.saveAsPdf(
         data: data, headers: headers, filename: filename, pdfTitle: "All Logs");
@@ -95,7 +96,8 @@ class _AdminLogsScreenState extends State<AdminLogsScreen> {
       rows.add(row);
     }
 
-    String currDate = DateTime.now().toString();
+    // String currDate = DateTime.now().toString();
+    String currDate = DateFormat('yyyyMMddTHHmmss').format(DateTime.now());
     String filename = "Logs_$currDate";
     await ExportUtil.saveAsCsv(rows: rows, filename: filename);
   }

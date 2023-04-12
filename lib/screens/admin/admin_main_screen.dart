@@ -1,8 +1,8 @@
-import 'package:CampusCar/screens/admin/drawer/admin_drawer_screen.dart';
-import 'package:CampusCar/screens/admin/home/admin_dashboard_screen.dart';
-import 'package:CampusCar/screens/admin/vehicle/admin_add_vehicle_screen.dart';
-import 'package:CampusCar/screens/admin/vehicle/admin_logs_screen.dart';
-import 'package:CampusCar/screens/admin/vehicle/admin_vehicles_screen.dart';
+import 'package:AutoVision/screens/admin/drawer/admin_drawer_screen.dart';
+import 'package:AutoVision/screens/admin/home/admin_dashboard_screen.dart';
+import 'package:AutoVision/screens/admin/vehicle/admin_add_vehicle_screen.dart';
+import 'package:AutoVision/screens/admin/vehicle/admin_logs_screen.dart';
+import 'package:AutoVision/screens/admin/vehicle/admin_vehicles_screen.dart';
 import 'package:flutter/material.dart';
 
 class AdminMainScreen extends StatefulWidget {

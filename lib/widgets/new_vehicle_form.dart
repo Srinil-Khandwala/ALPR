@@ -1,8 +1,8 @@
 import 'dart:io';
-import 'package:CampusCar/constants/colors.dart';
-import 'package:CampusCar/constants/constants.dart';
-import 'package:CampusCar/widgets/custom_icon_button.dart';
-import 'package:CampusCar/widgets/custom_input_field.dart';
+import 'package:AutoVision/constants/colors.dart';
+import 'package:AutoVision/constants/constants.dart';
+import 'package:AutoVision/widgets/custom_icon_button.dart';
+import 'package:AutoVision/widgets/custom_input_field.dart';
 // import 'package:circular_check_box/circular_check_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_material_color_picker/flutter_material_color_picker.dart';

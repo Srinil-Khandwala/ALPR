@@ -1,5 +1,5 @@
-import 'package:CampusCar/locator.dart';
-import 'package:CampusCar/screens/splash/splash_screen.dart';
+import 'package:AutoVision/locator.dart';
+import 'package:AutoVision/screens/splash/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart' as DotEnv;
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     precacheImage(AssetImage('assets/images/car-home.png'), context);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Campus Car',
+      title: 'AutoVision',
       theme: ThemeData(scaffoldBackgroundColor: Colors.white),
       home: SplashScreen(),
     );

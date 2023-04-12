@@ -1,15 +1,15 @@
 import 'dart:io';
-import 'package:CampusCar/constants/colors.dart';
-import 'package:CampusCar/constants/constants.dart';
-import 'package:CampusCar/locator.dart';
-import 'package:CampusCar/models/vehicle.dart';
-import 'package:CampusCar/service/vehicle_service.dart';
-import 'package:CampusCar/utils/utils.dart';
-import 'package:CampusCar/widgets/my_drawer.dart';
-import 'package:CampusCar/widgets/new_vehicle_form.dart';
+import 'package:AutoVision/constants/colors.dart';
+import 'package:AutoVision/constants/constants.dart';
+import 'package:AutoVision/locator.dart';
+import 'package:AutoVision/models/vehicle.dart';
+import 'package:AutoVision/service/vehicle_service.dart';
+import 'package:AutoVision/utils/utils.dart';
+import 'package:AutoVision/widgets/my_drawer.dart';
+import 'package:AutoVision/widgets/new_vehicle_form.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:CampusCar/widgets/loading_screen.dart';
+import 'package:AutoVision/widgets/loading_screen.dart';
 
 class AdminAddVehicleScreen extends StatefulWidget {
   @override

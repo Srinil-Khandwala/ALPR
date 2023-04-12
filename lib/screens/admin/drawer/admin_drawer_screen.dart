@@ -1,5 +1,5 @@
-import 'package:CampusCar/constants/colors.dart';
-import 'package:CampusCar/screens/user/main_screen.dart';
+import 'package:AutoVision/constants/colors.dart';
+import 'package:AutoVision/screens/user/main_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -51,7 +51,7 @@ class _AdminDrawerScreenState extends State<AdminDrawerScreen> {
                 width: 10,
               ),
               Text(
-                'Campus Car Admin',
+                'AutoVision Admin',
                 style: TextStyle(
                     color: Colors.white, fontSize: 24, fontFamily: 'CarterOne'),
               ),

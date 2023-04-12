@@ -1,7 +1,7 @@
 import 'dart:async';
-import 'package:CampusCar/constants/colors.dart';
-import 'package:CampusCar/screens/user/main_screen.dart';
-import 'package:CampusCar/widgets/my_fadein.dart';
+import 'package:AutoVision/constants/colors.dart';
+import 'package:AutoVision/screens/user/main_screen.dart';
+import 'package:AutoVision/widgets/my_fadein.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -43,7 +43,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 height: 40,
               ),
               Container(
-                child: Text("Campus Car",
+                child: Text("AutoVision",
                     style: TextStyle(
                         fontFamily: 'CarterOne',
                         fontSize: 40,

@@ -1,5 +1,5 @@
-import 'package:CampusCar/constants/colors.dart';
-import 'package:CampusCar/widgets/rounded_button.dart';
+import 'package:AutoVision/constants/colors.dart';
+import 'package:AutoVision/widgets/rounded_button.dart';
 import 'package:flutter/material.dart';
 
 class NoVehicles extends StatelessWidget {

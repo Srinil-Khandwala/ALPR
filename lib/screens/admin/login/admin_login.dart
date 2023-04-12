@@ -1,9 +1,9 @@
-import 'package:CampusCar/components/progress_widget.dart';
-import 'package:CampusCar/screens/admin/admin_main_screen.dart';
-import 'package:CampusCar/utils/utils.dart';
+import 'package:AutoVision/components/progress_widget.dart';
+import 'package:AutoVision/screens/admin/admin_main_screen.dart';
+import 'package:AutoVision/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:CampusCar/constants/colors.dart' as Constants;
+import 'package:AutoVision/constants/colors.dart' as Constants;
 
 class AdminLogin extends StatefulWidget {
   State createState() => LoginPageState();
@@ -124,7 +124,7 @@ class LoginPageState extends State<AdminLogin> {
                       SizedBox(
                         height: 20,
                       ),
-                      Text("Campus Car",
+                      Text("AutoVision",
                           style: TextStyle(
                               fontFamily: 'CarterOne',
                               fontSize: 40,

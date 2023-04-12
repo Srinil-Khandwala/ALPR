@@ -1,23 +1,41 @@
 import 'dart:io';
 import 'package:csv/csv.dart';
-import 'package:ext_storage/ext_storage.dart';
+// import 'package:ext_storage/ext_storage.dart';
+import 'package:external_path/external_path.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:pdf/pdf.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:pdf/widgets.dart' as pw;
 
 class ExportUtil {
-  static Future<String> get _localPath async {
-    var downloadsDirectory = await ExtStorage.getExternalStoragePublicDirectory(
-        ExtStorage.DIRECTORY_DOWNLOADS);
+  static Future<String> get   _localPath async {
+    //   var downloadsDirectory = await ExtStorage.getExternalStoragePublicDirectory(
+    //       ExtStorage.DIRECTORY_DOWNLOADS);
+    //   return downloadsDirectory;
+    // }
+
+    var downloadsDirectory =
+        await ExternalPath.getExternalStoragePublicDirectory(
+            ExternalPath.DIRECTORY_DOWNLOADS);
     return downloadsDirectory;
   }
 
   static Future<File> createLocalFile(
       {String filename, String fileExtension}) async {
-    var status = await Permission.storage.status;
-    if (!status.isGranted) {
+    var status1 = await Permission.storage.status;
+    if (!status1.isGranted) {
+      print(status1);
+      print(status1.isGranted);
       await Permission.storage.request();
+      // await Permission.manageExternalStorage.request();
+    }
+    var status = await Permission.manageExternalStorage.status;
+    print(status);
+    if (!status.isGranted) {
+      print(status);
+      print(status.isGranted);
+      // await Permission.storage.request();
+      await Permission.manageExternalStorage.request();
     }
     final path = await _localPath;
     print(path);

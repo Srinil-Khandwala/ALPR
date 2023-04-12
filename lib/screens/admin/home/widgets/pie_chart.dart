@@ -1,7 +1,7 @@
-import 'package:CampusCar/constants/colors.dart';
-import 'package:CampusCar/locator.dart';
-import 'package:CampusCar/screens/admin/home/widgets/chart_container.dart';
-import 'package:CampusCar/service/admin_service.dart';
+import 'package:AutoVision/constants/colors.dart';
+import 'package:AutoVision/locator.dart';
+import 'package:AutoVision/screens/admin/home/widgets/chart_container.dart';
+import 'package:AutoVision/service/admin_service.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 

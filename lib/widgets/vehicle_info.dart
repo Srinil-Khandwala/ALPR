@@ -1,5 +1,5 @@
-import 'package:CampusCar/constants/colors.dart';
-import 'package:CampusCar/models/vehicle.dart';
+import 'package:AutoVision/constants/colors.dart';
+import 'package:AutoVision/models/vehicle.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hexcolor/hexcolor.dart';

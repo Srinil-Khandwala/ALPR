@@ -1,9 +1,9 @@
 import 'dart:io';
-import 'package:CampusCar/enum/direction.dart';
-import 'package:CampusCar/models/log.dart';
-import 'package:CampusCar/models/vehicle.dart';
-import 'package:CampusCar/utils/sms_util.dart';
-import 'package:CampusCar/utils/utils.dart';
+import 'package:AutoVision/enum/direction.dart';
+import 'package:AutoVision/models/log.dart';
+import 'package:AutoVision/models/vehicle.dart';
+import 'package:AutoVision/utils/sms_util.dart';
+import 'package:AutoVision/utils/utils.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 

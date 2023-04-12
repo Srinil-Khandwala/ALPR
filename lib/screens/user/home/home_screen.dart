@@ -1,21 +1,21 @@
 import 'dart:convert';
-import 'package:CampusCar/components/live_button.dart';
-import 'package:CampusCar/models/vehicle.dart';
-import 'package:CampusCar/screens/user/vehicle/live_vehicle_screen.dart';
-import 'package:CampusCar/screens/user/vehicle/vehicle_detail_screen.dart';
-import 'package:CampusCar/service/vehicle_service.dart';
-import 'package:CampusCar/utils/utils.dart';
-import 'package:CampusCar/widgets/loading_screen.dart';
+import 'package:AutoVision/components/live_button.dart';
+import 'package:AutoVision/models/vehicle.dart';
+import 'package:AutoVision/screens/user/vehicle/live_vehicle_screen.dart';
+import 'package:AutoVision/screens/user/vehicle/vehicle_detail_screen.dart';
+import 'package:AutoVision/service/vehicle_service.dart';
+import 'package:AutoVision/utils/utils.dart';
+import 'package:AutoVision/widgets/loading_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
-import 'package:CampusCar/constants/colors.dart';
-import 'package:CampusCar/widgets/my_drawer.dart';
-import 'package:CampusCar/widgets/rounded_button.dart';
+import 'package:AutoVision/constants/colors.dart';
+import 'package:AutoVision/widgets/my_drawer.dart';
+import 'package:AutoVision/widgets/rounded_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:CampusCar/locator.dart';
+import 'package:AutoVision/locator.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -205,14 +205,14 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return MyDrawer(
-      rightIcon: GestureDetector(
-        onTap: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => LiveVehicle()),
-          );
-        },
-        child: liveButton(),
-      ),
+      // rightIcon: GestureDetector(
+      //   onTap: () {
+      //     Navigator.of(context).push(
+      //       MaterialPageRoute(builder: (context) => LiveVehicle()),
+      //     );
+      //   },
+      //   child: liveButton(),
+      // ),
       child: isLoading
           ? Container(
               alignment: Alignment.center,
@@ -227,7 +227,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Text(
-                    "Campus Car",
+                    "AutoVision",
                     style: TextStyle(
                       fontSize: 36,
                       fontWeight: FontWeight.bold,
