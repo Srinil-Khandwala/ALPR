@@ -1,5 +1,4 @@
  <div align="center">
-<img src="assets/icon/logo-cc-new.png"  alt="CampusCar" width="120" >
 
 CampusCar
 ==========
