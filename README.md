@@ -1,6 +1,6 @@
  <div align="center">
 
-CampusCar
+AutoVision
 ==========
 
 [![](https://img.shields.io/badge/Made_with-Flutter-blue?style=for-the-badge&logo=flutter)](https://flutter.dev/docs)
@@ -25,7 +25,7 @@ Introduction
 -------------
 
 
-CampusCar provides automated vehicle entry system for any campus/institute or any buildings/socities to automate the process and help maintain records,logs,vehicles... and many more features.
+AutoVision provides automated vehicle entry system for any campus/institute or any buildings/socities to automate the process and help maintain records,logs,vehicles... and many more features.
 
 Basically a vehicle number plate recognition app to verify whether the car has access/can enter the campus or not and provide temporary permit to visitors. Also an admin UI to view all logs and manage registered vehicles and more...
 
@@ -97,7 +97,3 @@ Demo
 </div>
 
 
-
-
-<br/>
-<p align="center"><a href="https://github.com/shahshubh/CampusCar#"><img src="./demo/backToTopButton.png" alt="Back to top" height="29"/></a></p>
